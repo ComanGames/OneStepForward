@@ -4,6 +4,7 @@ namespace OneStepForward.Controllers
 {
     public class HomeController : Controller
     {
+        [OutputCacheAttribute(VaryByParam = "*", Duration = 0, NoStore = true)]
         public ActionResult Index()
         {
             return View();
